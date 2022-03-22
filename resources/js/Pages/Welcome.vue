@@ -1,0 +1,180 @@
+<script setup>
+import { Head, Link } from "@inertiajs/inertia-vue3";
+import { BellIcon, QuestionMarkCircleIcon } from "@heroicons/vue/solid";
+import { ref, onMounted } from "vue";
+import moment from "moment";
+
+import Contact from "@/Contact";
+import About from "@/About";
+import Projects from "@/Projects";
+import OngoingProjects from "@/OngoingProjects";
+import Testimonials from "@/Testimonials.vue";
+const currentTime = ref(null);
+const welcome = ref("Hello, Welcome to Arudovwen.me");
+const isOpen = ref(false);
+function updateCurrentTime() {
+  currentTime.value = moment().format("LTS");
+}
+onMounted(() => {
+  currentTime.value = moment().format("LTS");
+  setInterval(() => updateCurrentTime(), 1 * 1000);
+});
+</script>
+
+<template>
+  <Head title="Arudovwen Says Welcome" />
+  <section class="min-h-screen w-screen bg-fixed px-5 md:px-0">
+    <div
+      class="
+        min-h-screen
+        w-full
+        flex
+        justify-center
+        items-center
+        relative
+        md:p-5
+      "
+    >
+      <span
+        class="
+          absolute
+          top-4
+          md:top-10
+          left-0
+          md:left-8
+          text-white
+          flex
+          items-center
+        "
+        ><img class="w-[35px] h-[35px] rounded-full bg-black mr-2" />
+        <span>{{
+          $page.props.auth.user ? $page.props.auth.user.name : "Annonymous"
+        }}</span>
+      </span>
+      <span
+        class="
+          absolute
+          top-4
+          md:top-10
+          right-0
+          md:right-8
+          text-white
+          flex
+          items-center
+        "
+      >
+        <span
+          class="
+            bg-black/30
+            backdrop-blur-md
+            rounded-full
+            w-8
+            h-8
+            flex
+            items-center
+            justify-center
+          "
+        >
+          <BellIcon class="w-5 h-5"
+        /></span>
+        <span class="ml-2 text-sm">{{ currentTime }}</span></span
+      >
+      <span class="absolute top-10 text-white text-3xl hidden md:inline">
+        <span
+          v-for="(text, index) in welcome"
+          :key="index"
+          class="transition ease-in-out delay-150 duration-300 hover:text-4xl"
+        >
+          {{ text }}</span
+        ></span
+      >
+      <Projects />
+    </div>
+    <About />
+
+    <div
+      class="
+        md:w-[80%]
+        flex flex-col-reverse
+        md:flex-row md:justify-between
+        mx-auto
+        mt-24
+        mb-8
+        md:mb-0
+      "
+    >
+      <div class="md-[50%] md:p-3">
+        <span
+          class="
+            mb-4
+            text-white
+            backdrop-blur-sm
+            bg-black/30
+            px-8
+            py-2
+            rounded-full
+            text-base
+            md:text-xl
+            flex
+            items-center
+            w-full
+            md:w-fit
+            text-center
+            md:text-left
+            justify-center
+            md:justify-start
+          "
+        >
+          Do you have a project in mind
+          <QuestionMarkCircleIcon class="w-6 h-6 ml-1 text-white" />
+        </span>
+        <Contact />
+      </div>
+
+      <div class="md:w-[30%]">
+        <OngoingProjects class="mb-6" />
+        <Testimonials />
+      </div>
+    </div>
+    <div class="text-center md:text-right mt-10 py-6 px-6">
+      <span class="text-white text-sm"
+        >Developed by Arudovwen.me ,&copy; {{ new Date().getFullYear() }}</span
+      >
+    </div>
+  </section>
+</template>
+
+<style >
+section {
+  background-image: url("/images/bg2.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.carousel {
+  background: transparent;
+}
+.carousel__prev--in-active,
+.carousel__next--in-active {
+  display: none;
+}
+.projects .carousel__viewport {
+  overflow: unset;
+  overflow-x: clip;
+  background: transparent;
+}
+.projects .carousel__track {
+  padding-left: 30px;
+  background: transparent;
+
+}
+ @media (max-width: 768px) {
+    .projects .carousel__track {
+      padding-left: 0px;
+      background: transparent;
+    }
+  }
+.carousel__prev,
+.carousel__next {
+  background-color: #333;
+}
+</style>
