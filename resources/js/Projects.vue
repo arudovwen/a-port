@@ -4,7 +4,7 @@ import Create from "@/Projects/create";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 import { ref } from "vue";
-
+import {usePage} from '@inertiajs/inertia-vue3'
 import {
   TransitionRoot,
   TransitionChild,
@@ -16,6 +16,7 @@ import {
 const isOpen = ref(false);
 const type = ref("");
 function toggleDemo(val) {
+  if(val=='create' && !usePage().props.value.auth.user) return;
   type.value = val;
   isOpen.value = !isOpen.value;
 }

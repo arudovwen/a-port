@@ -46,6 +46,7 @@ const submit = () => {
   >
 
     <div class="rounded-t-3xl rounded-b-3xl p-8">
+      <h2 class="font-bold text-center mb-4 text-xl">Add Project</h2>
       <BreezeValidationErrors class="mb-4" />
 
       <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
