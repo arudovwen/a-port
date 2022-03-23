@@ -22629,8 +22629,8 @@ __webpack_require__.r(__webpack_exports__);
       },
       // 1024 and up
       1024: {
-        itemsToShow: 5,
-        snapAlign: "start"
+        itemsToShow: 3.5,
+        snapAlign: "center"
       }
     };
     var __returned__ = {
@@ -24661,7 +24661,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Navigation"])];
     }),
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(5, function (slide) {
+      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(8, function (slide) {
         return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Slide"], {
           key: slide,
           "class": "px-2 w-[350px] md:h-[400px] relative"
@@ -24671,7 +24671,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
               onClick: _cache[1] || (_cache[1] = function ($event) {
                 return $setup.toggleDemo('zoom');
               }),
-              "class": "peer transition ease-in-out delay-150 duration-300 w-full h-[160px] md:h-[200px] border-2 border-white rounded-md md:hover:scale-125 hover:z-40 bg-white shadow-lg ring-offset-2 hover:ring-4 cursor-pointer"
+              "class": "peer transition ease-in-out delay-150 duration-300 w-full h-[160px] md:h-[200px] border-2 border-white rounded-md md:hover:scale-[120%] hover:z-40 bg-white shadow-lg ring-offset-2 hover:ring-4 cursor-pointer"
             }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(slide), 1
             /* TEXT */
             ), _hoisted_3];

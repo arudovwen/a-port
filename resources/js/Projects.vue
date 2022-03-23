@@ -32,8 +32,8 @@ const breakpoints = {
   },
   // 1024 and up
   1024: {
-    itemsToShow: 5,
-    snapAlign: "start",
+    itemsToShow: 3.5,
+   snapAlign: "center",
   },
 };
 </script>
@@ -66,7 +66,7 @@ const breakpoints = {
       class="md:grow bg-transparent projects"
     >
       <slide
-        v-for="slide in 5"
+        v-for="slide in 8"
         :key="slide"
         class="px-2 w-[350px] md:h-[400px] relative"
       >
@@ -83,7 +83,7 @@ const breakpoints = {
             md:h-[200px]
             border-2 border-white
             rounded-md
-            md:hover:scale-125
+            md:hover:scale-[120%]
             hover:z-40
             bg-white
             shadow-lg
