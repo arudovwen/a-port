@@ -22,23 +22,24 @@ const form = useForm({
   email: "",
   name: "",
   message: "",
+  phone:""
 });
 
 const submit = () => {
-  form.post(route("login"), {
+  form.post(route("contact"), {
     onFinish: () => form.reset("password"),
   });
 };
 </script>
 
 <template>
-  <div
+  <form @submit.prevent="submit"
     class="
       text-white
       bg-white-50
       backdrop-blur-sm
       bg-black/30
-      pt-8
+      pt-6
       rounded-t-3xl rounded-b-3xl
     "
   >
@@ -56,10 +57,21 @@ const submit = () => {
         <BreezeInput
           id="text"
           type="text"
-          class="mt-1 block w-full"
+          class="mt-1 block w-full text-gray-800"
           v-model="form.name"
           required
           autocomplete="name"
+        />
+      </div>
+       <div class="mt-4">
+        <BreezeLabel for="phone" value="Phone" class="text-white" />
+        <BreezeInput
+          id="phone"
+          type="number"
+          class="mt-1 block w-full text-gray-800"
+          v-model="form.phone"
+          required
+          autocomplete="phone"
         />
       </div>
       <div class="mt-4">
@@ -67,7 +79,7 @@ const submit = () => {
         <BreezeInput
           id="email"
           type="email"
-          class="mt-1 block w-full"
+          class="mt-1 block w-full text-gray-800"
           v-model="form.email"
           required
           autocomplete="email"
@@ -75,17 +87,17 @@ const submit = () => {
       </div>
       <div class="mt-4">
         <BreezeLabel for="message" value="Message" class="text-white" />
-        <BreezeTextarea
-          id="message"
-          class="mt-1 block w-full"
+
+          <textarea class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+          rounded-md shadow-sm   mt-1 block w-full text-gray-800"  id="message"
+
           v-model="form.message"
-          required
-          autocomplete="message"
-        />
+          required></textarea>
       </div>
 
       <div class="mt-4 text-right">
         <BreezeButton
+        type="submit"
           class="ml-auto"
           :class="{ 'opacity-25': form.processing }"
           :disabled="form.processing"
@@ -94,6 +106,6 @@ const submit = () => {
         </BreezeButton>
       </div>
     </div>
-  </div>
+  </form>
 </template>
 

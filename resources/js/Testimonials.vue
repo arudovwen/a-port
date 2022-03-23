@@ -32,7 +32,7 @@ const isOpen = ref(false);
     <h2 class="text-white text-base md:text-2xl mb-6  flex items-center">
      Clients Testimonials
     </h2>
-     <carousel :items-to-show="1" snap-align="center" class=" bg-transparent">
+     <carousel :items-to-show="1" snap-align="center" :autoplay="5000" class=" bg-transparent">
       <slide
         v-for="slide in 5"
         :key="slide"

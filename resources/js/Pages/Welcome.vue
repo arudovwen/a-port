@@ -103,7 +103,7 @@ onMounted(() => {
         md:mb-0
       "
     >
-      <div class="md-[50%] md:p-3">
+      <div class="md:w-[50%] md:px-3">
         <span
           class="
             mb-4
@@ -131,7 +131,7 @@ onMounted(() => {
         <Contact />
       </div>
 
-      <div class="md:w-[30%]">
+      <div class="md:w-[40%]">
         <OngoingProjects class="mb-6" />
         <Testimonials />
       </div>

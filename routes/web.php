@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Application;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,5 +38,6 @@ Route::resource('/testimonials', TestimonialController::class, [
     'as' => 'prefix'
 ])->middleware(['auth', 'verified']);
 
+Route::post('/contact', ContactController::class)->name('contact');
 
 require __DIR__.'/auth.php';
