@@ -109,7 +109,7 @@ const breakpoints = {
             peer-hover:scale-125
           "
         >
-          <span class="text-white font-bold text-base md:text-xl"
+          <span class="text-white font-bold text-xl"
             >About Text</span
           >
           <br />

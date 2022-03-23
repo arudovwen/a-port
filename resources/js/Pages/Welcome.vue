@@ -9,16 +9,35 @@ import About from "@/About";
 import Projects from "@/Projects";
 import OngoingProjects from "@/OngoingProjects";
 import Testimonials from "@/Testimonials.vue";
+const titles = [
+  'Front-End',
+  'Back-End',
+  'API'
+]
 const currentTime = ref(null);
-const welcome = ref("Hello, Welcome to Arudovwen.me");
 const isOpen = ref(false);
+const index = ref(0)
 function updateCurrentTime() {
   currentTime.value = moment().format("LTS");
 }
 onMounted(() => {
   currentTime.value = moment().format("LTS");
   setInterval(() => updateCurrentTime(), 1 * 1000);
+   setInterval(() => toggleWord(), 1 * 3500);
+
+
 });
+
+function toggleWord(){
+
+    index.value++;
+    if(index.value==3){
+      index.value=0
+    }
+
+}
+
+
 </script>
 
 <template>
@@ -32,6 +51,7 @@ onMounted(() => {
         justify-center
         items-center
         relative
+         flex-col md:flex-row
         md:p-5
       "
     >
@@ -60,6 +80,7 @@ onMounted(() => {
           md:right-8
           text-white
           flex
+
           items-center
         "
       >
@@ -79,15 +100,15 @@ onMounted(() => {
         /></span>
         <span class="ml-2 text-sm">{{ currentTime }}</span></span
       >
-      <span class="absolute top-10 text-white text-3xl hidden md:inline">
+      <p class="md:absolute top-10 text-white mb-16 md:mb-0 text-4xl md:text-3xl  ">
         <span
-          v-for="(text, index) in welcome"
-          :key="index"
-          class="transition ease-in-out delay-150 duration-300 hover:text-4xl"
+
+          class="transition ease-in-out delay-150 duration-300 md:hover:text-4xl font-bold"
         >
-          {{ text }}</span
-        ></span
+          Hello, do you need a <br class="md:hidden"> <span class="mx-1 text-gray-800">{{titles[index]}}</span> developer</span
+        ></p
       >
+
       <Projects />
     </div>
     <About />
