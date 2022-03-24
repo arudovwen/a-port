@@ -22545,6 +22545,7 @@ __webpack_require__.r(__webpack_exports__);
     var currentTime = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)(null);
     var isOpen = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)(false);
     var index = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)(0);
+    var robot = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)("john");
 
     function updateCurrentTime() {
       currentTime.value = moment__WEBPACK_IMPORTED_MODULE_2___default()().format("LTS");
@@ -22558,6 +22559,7 @@ __webpack_require__.r(__webpack_exports__);
       setInterval(function () {
         return toggleWord();
       }, 1 * 3500);
+      generate();
     });
 
     function toggleWord() {
@@ -22568,13 +22570,26 @@ __webpack_require__.r(__webpack_exports__);
       }
     }
 
+    function generate() {
+      var characters = "abcdefghijklmnopqrstuvwxyz";
+      var result = " ";
+
+      for (var i = 0; i < 5; i++) {
+        result += characters.charAt(Math.floor(Math.random() * characters.length));
+      }
+
+      robot.value = result;
+    }
+
     var __returned__ = {
       titles: titles,
       currentTime: currentTime,
       isOpen: isOpen,
       index: index,
+      robot: robot,
       updateCurrentTime: updateCurrentTime,
       toggleWord: toggleWord,
+      generate: generate,
       Head: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Head,
       Link: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Link,
       BellIcon: _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_8__["default"],
@@ -24571,13 +24586,7 @@ var _hoisted_2 = {
 var _hoisted_3 = {
   "class": "absolute top-4 md:top-10 left-0 md:left-8 text-white flex items-center"
 };
-
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  "class": "sm:w-[30px] sm:h-[30px] md:w-[35px] md:h-[35px] rounded-full bg-black mr-2"
-}, null, -1
-/* HOISTED */
-);
-
+var _hoisted_4 = ["src"];
 var _hoisted_5 = {
   "class": "text-sm md:text-base"
 };
@@ -24638,7 +24647,12 @@ var _hoisted_22 = {
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Head"], {
     title: "Success Ahon | Full stack web developer"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$page.props.auth.user ? _ctx.$page.props.auth.user.name : "Annonymous"), 1
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+    src: "https://robohash.org/".concat($setup.robot, "?set=set3"),
+    "class": "sm:w-[30px] sm:h-[30px] md:w-[40px] md:h-[40px] rounded-full object-cover mr-1"
+  }, null, 8
+  /* PROPS */
+  , _hoisted_4), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$page.props.auth.user ? _ctx.$page.props.auth.user.name : "Annonymous"), 1
   /* TEXT */
   )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BellIcon"], {
     "class": "w-4 h-4 md:w-5 md:h-5"

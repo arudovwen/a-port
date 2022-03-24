@@ -13,6 +13,7 @@ const titles = ["Front-End", "Back-End", "API"];
 const currentTime = ref(null);
 const isOpen = ref(false);
 const index = ref(0);
+const robot = ref("john");
 function updateCurrentTime() {
   currentTime.value = moment().format("LTS");
 }
@@ -20,6 +21,7 @@ onMounted(() => {
   currentTime.value = moment().format("LTS");
   setInterval(() => updateCurrentTime(), 1 * 1000);
   setInterval(() => toggleWord(), 1 * 3500);
+  generate();
 });
 
 function toggleWord() {
@@ -27,6 +29,17 @@ function toggleWord() {
   if (index.value == 3) {
     index.value = 0;
   }
+}
+function generate() {
+
+  const characters = "abcdefghijklmnopqrstuvwxyz";
+  let result = " ";
+
+  for (let i = 0; i < 5; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  robot.value = result;
+
 }
 </script>
 
@@ -56,7 +69,16 @@ function toggleWord() {
           flex
           items-center
         "
-        ><img class="sm:w-[30px] sm:h-[30px] md:w-[35px] md:h-[35px] rounded-full bg-black mr-2" />
+        ><img
+          :src="`https://robohash.org/${robot}?set=set3`"
+          class="
+            sm:w-[30px] sm:h-[30px]
+            md:w-[40px] md:h-[40px]
+            rounded-full
+            object-cover
+            mr-1
+          "
+        />
         <span class="text-sm md:text-base">{{
           $page.props.auth.user ? $page.props.auth.user.name : "Annonymous"
         }}</span>
@@ -98,13 +120,12 @@ function toggleWord() {
             ease-in-out
             delay-150
             duration-300
-
             md:hover:text-4xl
             font-bold
           "
         >
           Hello, do you need a/an <br class="md:hidden" />
-          <span class=" text-black">{{ titles[index] }}</span>
+          <span class="text-black">{{ titles[index] }}</span>
           developer</span
         >
       </p>
@@ -158,35 +179,60 @@ function toggleWord() {
       </div>
     </div>
 
-    <div class="flex flex-col md:flex-row justify-between  mt-10 py-6 px-6 text-center">
-      <div class=" flex justify-center md:justify-start text-sm text-white mb-3 md:mb-0">
-            <a href="https://linkedin.com/in/success-ahon">
-              <div class="px-md-3">
-                <i class="fa fa-linkedin text-dark" aria-hidden="true"></i>
-                <span class="d-none d-md-inline">Linkedin</span>
-              </div></a>
-            <a href="https://github.com/arudovwen">
-              <div class="px-3">
-                <i class="fa fa-github text-dark" aria-hidden="true"></i>
-                <span class="d-none d-md-inline">Github</span>
-              </div></a>
-            <a href="https://wa.link/sapu5k"><div class="px-3">
-                <i class="fa fa-whatsapp text-dark" aria-hidden="true"></i>
-                <span class="d-none d-md-inline">Whatsapp</span>
-              </div></a>
+    <div
+      class="
+        flex flex-col
+        md:flex-row
+        justify-between
+        mt-10
+        py-6
+        px-6
+        text-center
+      "
+    >
+      <div
+        class="
+          flex
+          justify-center
+          md:justify-start
+          text-sm text-white
+          mb-3
+          md:mb-0
+        "
+      >
+        <a href="https://linkedin.com/in/success-ahon">
+          <div class="px-md-3">
+            <i class="fa fa-linkedin text-dark" aria-hidden="true"></i>
+            <span class="d-none d-md-inline">Linkedin</span>
+          </div></a
+        >
+        <a href="https://github.com/arudovwen">
+          <div class="px-3">
+            <i class="fa fa-github text-dark" aria-hidden="true"></i>
+            <span class="d-none d-md-inline">Github</span>
+          </div></a
+        >
+        <a href="https://wa.link/sapu5k"
+          ><div class="px-3">
+            <i class="fa fa-whatsapp text-dark" aria-hidden="true"></i>
+            <span class="d-none d-md-inline">Whatsapp</span>
+          </div></a
+        >
 
-            <a href="tel:+2348160723910">
-              <div class="px-3">
-                <i class="fa fa-phone-square text-dark" aria-hidden="true"></i>
-                <span class="d-none d-md-inline">Phone</span>
-              </div>
-            </a>
-
-            <a href="mailto:successahon@gmail.com"><div class="px-3">
-                <i class="fa fa-envelope text-dark" aria-hidden="true"></i>
-                <span class="d-none d-md-inline">Email</span>
-              </div></a>
+        <a href="tel:+2348160723910">
+          <div class="px-3">
+            <i class="fa fa-phone-square text-dark" aria-hidden="true"></i>
+            <span class="d-none d-md-inline">Phone</span>
           </div>
+        </a>
+
+        <a href="mailto:successahon@gmail.com"
+          ><div class="px-3">
+            <i class="fa fa-envelope text-dark" aria-hidden="true"></i>
+            <span class="d-none d-md-inline">Email</span>
+          </div></a
+        >
+      </div>
       <span class="text-white text-sm"
         >Developed by Arudovwen.me ,&copy; {{ new Date().getFullYear() }}</span
       >
