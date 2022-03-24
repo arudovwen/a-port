@@ -3,7 +3,8 @@
       class="
         md:w-[50%]
         mx-auto
-        -mt-20
+        -mt-4
+        md:-mt-20
         backdrop-blur-sm
         rounded-2xl
         text-left

@@ -9,39 +9,29 @@ import About from "@/About";
 import Projects from "@/Projects";
 import OngoingProjects from "@/OngoingProjects";
 import Testimonials from "@/Testimonials.vue";
-const titles = [
-  'Front-End',
-  'Back-End',
-  'API'
-]
+const titles = ["Front-End", "Back-End", "API"];
 const currentTime = ref(null);
 const isOpen = ref(false);
-const index = ref(0)
+const index = ref(0);
 function updateCurrentTime() {
   currentTime.value = moment().format("LTS");
 }
 onMounted(() => {
   currentTime.value = moment().format("LTS");
   setInterval(() => updateCurrentTime(), 1 * 1000);
-   setInterval(() => toggleWord(), 1 * 3500);
-
-
+  setInterval(() => toggleWord(), 1 * 3500);
 });
 
-function toggleWord(){
-
-    index.value++;
-    if(index.value==3){
-      index.value=0
-    }
-
+function toggleWord() {
+  index.value++;
+  if (index.value == 3) {
+    index.value = 0;
+  }
 }
-
-
 </script>
 
 <template>
-  <Head title="Arudovwen Says Welcome" />
+  <Head title="Success Ahon | Full stack web developer" />
   <section class="min-h-screen w-screen bg-fixed px-5 md:px-0">
     <div
       class="
@@ -51,8 +41,8 @@ function toggleWord(){
         justify-center
         items-center
         relative
-         flex-col md:flex-row
-        md:p-5
+        flex-col
+        md:flex-row md:p-5
       "
     >
       <span
@@ -66,8 +56,8 @@ function toggleWord(){
           flex
           items-center
         "
-        ><img class="w-[35px] h-[35px] rounded-full bg-black mr-2" />
-        <span>{{
+        ><img class="sm:w-[30px] sm:h-[30px] md:w-[35px] md:h-[35px] rounded-full bg-black mr-2" />
+        <span class="text-sm md:text-base">{{
           $page.props.auth.user ? $page.props.auth.user.name : "Annonymous"
         }}</span>
       </span>
@@ -80,7 +70,6 @@ function toggleWord(){
           md:right-8
           text-white
           flex
-
           items-center
         "
       >
@@ -96,18 +85,29 @@ function toggleWord(){
             justify-center
           "
         >
-          <BellIcon class="w-5 h-5"
+          <BellIcon class="w-4 h-4 md:w-5 md:h-5"
         /></span>
-        <span class="ml-2 text-sm">{{ currentTime }}</span></span
+        <span class="ml-2 text-xs md:text-sm">{{ currentTime }}</span></span
       >
-      <p class="md:absolute top-10 text-white mb-16 md:mb-0 text-4xl md:text-3xl  ">
+      <p
+        class="md:absolute top-10 text-white mb-16 md:mb-0 text-3xl md:text-3xl"
+      >
         <span
+          class="
+            transition
+            ease-in-out
+            delay-150
+            duration-300
 
-          class="transition ease-in-out delay-150 duration-300 md:hover:text-4xl font-bold"
+            md:hover:text-4xl
+            font-bold
+          "
         >
-          Hello, do you need a <br class="md:hidden"> <span class="mx-1 text-gray-800">{{titles[index]}}</span> developer</span
-        ></p
-      >
+          Hello, do you need a/an <br class="md:hidden" />
+          <span class=" text-black">{{ titles[index] }}</span>
+          developer</span
+        >
+      </p>
 
       <Projects />
     </div>
@@ -157,7 +157,36 @@ function toggleWord(){
         <Testimonials />
       </div>
     </div>
-    <div class="text-center md:text-right mt-10 py-6 px-6">
+
+    <div class="flex flex-col md:flex-row justify-between  mt-10 py-6 px-6 text-center">
+      <div class=" flex justify-center md:justify-start text-sm text-white mb-3 md:mb-0">
+            <a href="https://linkedin.com/in/success-ahon">
+              <div class="px-md-3">
+                <i class="fa fa-linkedin text-dark" aria-hidden="true"></i>
+                <span class="d-none d-md-inline">Linkedin</span>
+              </div></a>
+            <a href="https://github.com/arudovwen">
+              <div class="px-3">
+                <i class="fa fa-github text-dark" aria-hidden="true"></i>
+                <span class="d-none d-md-inline">Github</span>
+              </div></a>
+            <a href="https://wa.link/sapu5k"><div class="px-3">
+                <i class="fa fa-whatsapp text-dark" aria-hidden="true"></i>
+                <span class="d-none d-md-inline">Whatsapp</span>
+              </div></a>
+
+            <a href="tel:+2348160723910">
+              <div class="px-3">
+                <i class="fa fa-phone-square text-dark" aria-hidden="true"></i>
+                <span class="d-none d-md-inline">Phone</span>
+              </div>
+            </a>
+
+            <a href="mailto:successahon@gmail.com"><div class="px-3">
+                <i class="fa fa-envelope text-dark" aria-hidden="true"></i>
+                <span class="d-none d-md-inline">Email</span>
+              </div></a>
+          </div>
       <span class="text-white text-sm"
         >Developed by Arudovwen.me ,&copy; {{ new Date().getFullYear() }}</span
       >
@@ -186,14 +215,17 @@ section {
 .projects .carousel__track {
   padding-left: 30px;
   background: transparent;
-
 }
- @media (max-width: 768px) {
-    .projects .carousel__track {
-      padding-left: 0px;
-      background: transparent;
-    }
+@media (max-width: 768px) {
+  .projects .carousel__track {
+    padding-left: 0px;
+    background: transparent;
   }
+  .projects .carousel__viewport {
+    overflow: hidden;
+    overflow-x: hidden;
+  }
+}
 .carousel__prev,
 .carousel__next {
   background-color: #333;

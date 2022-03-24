@@ -22541,7 +22541,7 @@ __webpack_require__.r(__webpack_exports__);
   setup: function setup(__props, _ref) {
     var expose = _ref.expose;
     expose();
-    var titles = ['Front-End', 'Back-End', 'API'];
+    var titles = ["Front-End", "Back-End", "API"];
     var currentTime = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)(null);
     var isOpen = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)(false);
     var index = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)(0);
@@ -22967,7 +22967,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "md:w-[50%] mx-auto -mt-20 backdrop-blur-sm rounded-2xl text-left bg-black/30 p-6 text-white"
+  "class": "md:w-[50%] mx-auto -mt-4 md:-mt-20 backdrop-blur-sm rounded-2xl text-left bg-black/30 p-6 text-white"
 };
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<h1 class=\"text-base md:text-2xl mb-6 text-center font-bold\">About Me</h1><p class=\"text-sm md:text-xl mb-2\">Hi there, my name is Success Ahon and I love building Software.</p><p class=\"mb-2 text-sm md:text-xl\">With over four (4) solid years of experience in Frontend and Backend development, I have flourished in creating Web Applications that cut across several interface; as well as developing API&#39;s for Mobile Applications.</p><p class=\"mb-4 text-sm md:text-xl\">I enjoy writing codes and constantly give my 100% to ensure user satisfaction.</p><div><h2 class=\"mb-4 text-sm md:text-xl font-bold\">Proficiency in :</h2><ul class=\"grid gap-3 md:gap-6 grid-cols-3\"><li class=\"text-sm md:text-base\"><span class=\"font-bold\">Javscript</span> <br><span class=\"text-gray-100\">React Js</span><br><span class=\"text-gray-100\">Vue Js</span><br><span class=\"text-gray-100\">Node Js</span></li><li class=\"text-sm md:text-base\"><span class=\"font-bold\">PHP</span><br><span class=\"text-gray-100\">Laravel Framework</span></li><li class=\"font-bold text-sm\">Html</li><li class=\"text-sm md:text-base\"><span class=\"font-bold\">CSS</span><br><span class=\"text-gray-100\">Scss</span><br><span class=\"text-gray-100\">Bootstrap Css</span><br><span class=\"text-gray-100\">Tailwind Css</span></li><li class=\"text-sm md:text-base\"><span class=\"font-bold\">Databases</span><br><span class=\"text-gray-100\">Mysql Db</span><br><span class=\"text-gray-100\">PostgreSQL Db</span></li><li class=\"text-sm md:text-base\"><span class=\"font-bold\">Cloud Services</span><br><span class=\"text-gray-100\">Heroku </span><br><span class=\"text-gray-100\">Netlify</span><br><span class=\"text-gray-100\">Firebase</span></li><li class=\"text-sm md:text-base\"><span class=\"font-bold\">Version Control</span><br><span class=\"text-gray-100\">Github</span><br><span class=\"text-gray-100\">Bitbucket</span></li></ul></div>", 5);
@@ -24573,39 +24573,40 @@ var _hoisted_3 = {
 };
 
 var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  "class": "w-[35px] h-[35px] rounded-full bg-black mr-2"
+  "class": "sm:w-[30px] sm:h-[30px] md:w-[35px] md:h-[35px] rounded-full bg-black mr-2"
 }, null, -1
 /* HOISTED */
 );
 
 var _hoisted_5 = {
-  "class": "absolute top-4 md:top-10 right-0 md:right-8 text-white flex items-center"
+  "class": "text-sm md:text-base"
 };
 var _hoisted_6 = {
-  "class": "bg-black/30 backdrop-blur-md rounded-full w-8 h-8 flex items-center justify-center"
+  "class": "absolute top-4 md:top-10 right-0 md:right-8 text-white flex items-center"
 };
 var _hoisted_7 = {
-  "class": "ml-2 text-sm"
+  "class": "bg-black/30 backdrop-blur-md rounded-full w-8 h-8 flex items-center justify-center"
 };
 var _hoisted_8 = {
-  "class": "md:absolute top-10 text-white mb-16 md:mb-0 text-4xl md:text-3xl"
+  "class": "ml-2 text-xs md:text-sm"
 };
 var _hoisted_9 = {
+  "class": "md:absolute top-10 text-white mb-16 md:mb-0 text-3xl md:text-3xl"
+};
+var _hoisted_10 = {
   "class": "transition ease-in-out delay-150 duration-300 md:hover:text-4xl font-bold"
 };
 
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Hello, do you need a ");
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Hello, do you need a/an ");
 
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", {
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", {
   "class": "md:hidden"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
-
 var _hoisted_13 = {
-  "class": "mx-1 text-gray-800"
+  "class": "text-black"
 };
 
 var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" developer");
@@ -24626,27 +24627,30 @@ var _hoisted_19 = {
   "class": "md:w-[40%]"
 };
 var _hoisted_20 = {
-  "class": "text-center md:text-right mt-10 py-6 px-6"
+  "class": "flex flex-col md:flex-row justify-between mt-10 py-6 px-6 text-center"
 };
-var _hoisted_21 = {
+
+var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex justify-center md:justify-start text-sm text-white mb-3 md:mb-0\"><a href=\"https://linkedin.com/in/success-ahon\"><div class=\"px-md-3\"><i class=\"fa fa-linkedin text-dark\" aria-hidden=\"true\"></i><span class=\"d-none d-md-inline\">Linkedin</span></div></a><a href=\"https://github.com/arudovwen\"><div class=\"px-3\"><i class=\"fa fa-github text-dark\" aria-hidden=\"true\"></i><span class=\"d-none d-md-inline\">Github</span></div></a><a href=\"https://wa.link/sapu5k\"><div class=\"px-3\"><i class=\"fa fa-whatsapp text-dark\" aria-hidden=\"true\"></i><span class=\"d-none d-md-inline\">Whatsapp</span></div></a><a href=\"tel:+2348160723910\"><div class=\"px-3\"><i class=\"fa fa-phone-square text-dark\" aria-hidden=\"true\"></i><span class=\"d-none d-md-inline\">Phone</span></div></a><a href=\"mailto:successahon@gmail.com\"><div class=\"px-3\"><i class=\"fa fa-envelope text-dark\" aria-hidden=\"true\"></i><span class=\"d-none d-md-inline\">Email</span></div></a></div>", 1);
+
+var _hoisted_22 = {
   "class": "text-white text-sm"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Head"], {
-    title: "Arudovwen Says Welcome"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$page.props.auth.user ? _ctx.$page.props.auth.user.name : "Annonymous"), 1
+    title: "Success Ahon | Full stack web developer"
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$page.props.auth.user ? _ctx.$page.props.auth.user.name : "Annonymous"), 1
   /* TEXT */
-  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BellIcon"], {
-    "class": "w-5 h-5"
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.currentTime), 1
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BellIcon"], {
+    "class": "w-4 h-4 md:w-5 md:h-5"
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.currentTime), 1
   /* TEXT */
-  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_9, [_hoisted_10, _hoisted_11, _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.titles[$setup.index]), 1
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_10, [_hoisted_11, _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.titles[$setup.index]), 1
   /* TEXT */
   ), _hoisted_14])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Projects"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["About"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_17, [_hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["QuestionMarkCircleIcon"], {
     "class": "w-6 h-6 ml-1 text-white"
   })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Contact"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["OngoingProjects"], {
     "class": "mb-6"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Testimonials"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_21, "Developed by Arudovwen.me ,© " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(new Date().getFullYear()), 1
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Testimonials"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [_hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_22, "Developed by Arudovwen.me ,© " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(new Date().getFullYear()), 1
   /* TEXT */
   )])])], 64
   /* STABLE_FRAGMENT */
@@ -25488,7 +25492,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nsection {\n  background-image: url(\"/images/bg2.jpeg\");\n  background-size: cover;\n  background-position: center;\n}\n.carousel {\n  background: transparent;\n}\n.carousel__prev--in-active,\n.carousel__next--in-active {\n  display: none;\n}\n.projects .carousel__viewport {\n  overflow: unset;\n  overflow-x: clip;\n  background: transparent;\n}\n.projects .carousel__track {\n  padding-left: 30px;\n  background: transparent;\n}\n@media (max-width: 768px) {\n.projects .carousel__track {\n      padding-left: 0px;\n      background: transparent;\n}\n}\n.carousel__prev,\n.carousel__next {\n  background-color: #333;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nsection {\n  background-image: url(\"/images/bg2.jpeg\");\n  background-size: cover;\n  background-position: center;\n}\n.carousel {\n  background: transparent;\n}\n.carousel__prev--in-active,\n.carousel__next--in-active {\n  display: none;\n}\n.projects .carousel__viewport {\n  overflow: unset;\n  overflow-x: clip;\n  background: transparent;\n}\n.projects .carousel__track {\n  padding-left: 30px;\n  background: transparent;\n}\n@media (max-width: 768px) {\n.projects .carousel__track {\n    padding-left: 0px;\n    background: transparent;\n}\n.projects .carousel__viewport {\n    overflow: hidden;\n    overflow-x: hidden;\n}\n}\n.carousel__prev,\n.carousel__next {\n  background-color: #333;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
