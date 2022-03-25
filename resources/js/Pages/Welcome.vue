@@ -72,7 +72,7 @@ function generate() {
         ><img
           :src="`https://robohash.org/${robot}?set=set3`"
           class="
-            sm:w-[30px] sm:h-[30px]
+            w-[30px] h-[30px]
             md:w-[40px] md:h-[40px]
             rounded-full
             object-cover
@@ -112,7 +112,7 @@ function generate() {
         <span class="ml-2 text-xs md:text-sm">{{ currentTime }}</span></span
       >
       <p
-        class="md:absolute top-10 text-white mb-16 md:mb-0 text-3xl md:text-3xl"
+        class="md:absolute top-10 text-white mb-16 md:mb-0 text-2xl sm:text-3xl md:text-3xl"
       >
         <span
           class="
@@ -267,10 +267,10 @@ section {
     padding-left: 0px;
     background: transparent;
   }
-  .projects .carousel__viewport {
+  /* .projects .carousel__viewport {
     overflow: hidden;
     overflow-x: hidden;
-  }
+  } */
 }
 .carousel__prev,
 .carousel__next {

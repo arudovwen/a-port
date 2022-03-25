@@ -22982,7 +22982,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "md:w-[50%] mx-auto -mt-4 md:-mt-20 backdrop-blur-sm rounded-2xl text-left bg-black/30 p-6 text-white"
+  "class": "md:w-[50%] mx-auto md:-mt-20 backdrop-blur-sm rounded-2xl text-left bg-black/30 p-6 text-white"
 };
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<h1 class=\"text-base md:text-2xl mb-6 text-center font-bold\">About Me</h1><p class=\"text-sm md:text-xl mb-2\">Hi there, my name is Success Ahon and I love building Software.</p><p class=\"mb-2 text-sm md:text-xl\">With over four (4) solid years of experience in Frontend and Backend development, I have flourished in creating Web Applications that cut across several interface; as well as developing API&#39;s for Mobile Applications.</p><p class=\"mb-4 text-sm md:text-xl\">I enjoy writing codes and constantly give my 100% to ensure user satisfaction.</p><div><h2 class=\"mb-4 text-sm md:text-xl font-bold\">Proficiency in :</h2><ul class=\"grid gap-3 md:gap-6 grid-cols-3\"><li class=\"text-sm md:text-base\"><span class=\"font-bold\">Javscript</span> <br><span class=\"text-gray-100\">React Js</span><br><span class=\"text-gray-100\">Vue Js</span><br><span class=\"text-gray-100\">Node Js</span></li><li class=\"text-sm md:text-base\"><span class=\"font-bold\">PHP</span><br><span class=\"text-gray-100\">Laravel Framework</span></li><li class=\"font-bold text-sm\">Html</li><li class=\"text-sm md:text-base\"><span class=\"font-bold\">CSS</span><br><span class=\"text-gray-100\">Scss</span><br><span class=\"text-gray-100\">Bootstrap Css</span><br><span class=\"text-gray-100\">Tailwind Css</span></li><li class=\"text-sm md:text-base\"><span class=\"font-bold\">Databases</span><br><span class=\"text-gray-100\">Mysql Db</span><br><span class=\"text-gray-100\">PostgreSQL Db</span></li><li class=\"text-sm md:text-base\"><span class=\"font-bold\">Cloud Services</span><br><span class=\"text-gray-100\">Heroku </span><br><span class=\"text-gray-100\">Netlify</span><br><span class=\"text-gray-100\">Firebase</span></li><li class=\"text-sm md:text-base\"><span class=\"font-bold\">Version Control</span><br><span class=\"text-gray-100\">Github</span><br><span class=\"text-gray-100\">Bitbucket</span></li></ul></div>", 5);
@@ -24600,7 +24600,7 @@ var _hoisted_8 = {
   "class": "ml-2 text-xs md:text-sm"
 };
 var _hoisted_9 = {
-  "class": "md:absolute top-10 text-white mb-16 md:mb-0 text-3xl md:text-3xl"
+  "class": "md:absolute top-10 text-white mb-16 md:mb-0 text-2xl sm:text-3xl md:text-3xl"
 };
 var _hoisted_10 = {
   "class": "transition ease-in-out delay-150 duration-300 md:hover:text-4xl font-bold"
@@ -24649,7 +24649,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     title: "Success Ahon | Full stack web developer"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     src: "https://robohash.org/".concat($setup.robot, "?set=set3"),
-    "class": "sm:w-[30px] sm:h-[30px] md:w-[40px] md:h-[40px] rounded-full object-cover mr-1"
+    "class": "w-[30px] h-[30px] md:w-[40px] md:h-[40px] rounded-full object-cover mr-1"
   }, null, 8
   /* PROPS */
   , _hoisted_4), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$page.props.auth.user ? _ctx.$page.props.auth.user.name : "Annonymous"), 1
@@ -25506,7 +25506,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nsection {\n  background-image: url(\"/images/bg2.jpeg\");\n  background-size: cover;\n  background-position: center;\n}\n.carousel {\n  background: transparent;\n}\n.carousel__prev--in-active,\n.carousel__next--in-active {\n  display: none;\n}\n.projects .carousel__viewport {\n  overflow: unset;\n  overflow-x: clip;\n  background: transparent;\n}\n.projects .carousel__track {\n  padding-left: 30px;\n  background: transparent;\n}\n@media (max-width: 768px) {\n.projects .carousel__track {\n    padding-left: 0px;\n    background: transparent;\n}\n.projects .carousel__viewport {\n    overflow: hidden;\n    overflow-x: hidden;\n}\n}\n.carousel__prev,\n.carousel__next {\n  background-color: #333;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nsection {\n  background-image: url(\"/images/bg2.jpeg\");\n  background-size: cover;\n  background-position: center;\n}\n.carousel {\n  background: transparent;\n}\n.carousel__prev--in-active,\n.carousel__next--in-active {\n  display: none;\n}\n.projects .carousel__viewport {\n  overflow: unset;\n  overflow-x: clip;\n  background: transparent;\n}\n.projects .carousel__track {\n  padding-left: 30px;\n  background: transparent;\n}\n@media (max-width: 768px) {\n.projects .carousel__track {\n    padding-left: 0px;\n    background: transparent;\n}\n  /* .projects .carousel__viewport {\n    overflow: hidden;\n    overflow-x: hidden;\n  } */\n}\n.carousel__prev,\n.carousel__next {\n  background-color: #333;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
