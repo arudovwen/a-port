@@ -1108,6 +1108,29 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(253 186 116 / var(--tw-bg-opacity));
 }
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+.from-black {
+  --tw-gradient-from: #000;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(0 0 0 / 0));
+}
+.from-black\/30 {
+  --tw-gradient-from: rgb(0 0 0 / 0.3);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(0 0 0 / 0));
+}
+.to-sky-600 {
+  --tw-gradient-to: #0284c7;
+}
+.to-transparent {
+  --tw-gradient-to: transparent;
+}
+.to-sky-600\/30 {
+  --tw-gradient-to: rgb(2 132 199 / 0.3);
+}
+.to-sky-800\/30 {
+  --tw-gradient-to: rgb(7 89 133 / 0.3);
+}
 .bg-fixed {
   background-attachment: fixed;
 }

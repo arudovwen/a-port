@@ -109,3 +109,12 @@ const submit = () => {
   </form>
 </template>
 
+<style scoped>
+.gradient__text{
+  background:var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+</style>
+
